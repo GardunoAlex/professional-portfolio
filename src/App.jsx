@@ -1,11 +1,28 @@
-import './App.css'
+import { Routes, Route } from "react-router-dom"
+import { followingDotCursor } from "cursor-effects"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+import Experience from "./pages/Experience"
+import "./App.css"
+import { useEffect } from "react"
+import Nav from "./components/Nav"
 
 export default function App() {
+  // Only run once
+  useEffect(() => {
+    new followingDotCursor()
+  }, [])
+
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-pink-500">
-        Tailwind v4 + Vite + React 🚀
-      </h1>
-    </div>
+    <>
+      <Nav /> 
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+    </>
+
   )
 }
