@@ -1,17 +1,12 @@
 import { Routes, Route } from "react-router-dom"
-import { followingDotCursor } from "cursor-effects"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Experience from "./pages/Experience"
 import "./App.css"
-import { useEffect } from "react"
 import Nav from "./components/Nav"
+import Footer from "./components/Footer"
 
 export default function App() {
-  // Only run once
-  useEffect(() => {
-    new followingDotCursor()
-  }, [])
 
   return (
     <>
@@ -22,6 +17,8 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>
+
+      <Footer />
     </>
 
   )
