@@ -3,7 +3,7 @@ import profile from "../static/images/alex.png"
 export default function Home() {
 	return (
 		<div className="w-full p-5">
-			<div className="max-w-4xl mx-auto px-4 py-8 flex flex-col justify-center">
+			<div className="max-w-4xl mx-auto px-4 pt-8 flex flex-col justify-center">
 
                 <div className="relative w-48 h-48 mx-auto mb-6">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white-500 to-blue-500 blur-2xl opacity-50 scale-110" />
@@ -12,120 +12,131 @@ export default function Home() {
                         alt="Alex" 
                         className="relative w-full h-full rounded-full object-cover scale-110"
                         style={{ 
-                            objectFit: 'cover',  // Add this explicitly in inline style
-                            objectPosition: "70% 0%"  // Try vertical shift instead
+                            objectFit: 'cover',  
+                            objectPosition: "70% 0%"  
                         }}
                     />
                 </div>
 
 				
-				<h1 className="text-4xl font-bold text-center mb-2">
+				<h1 className="text-4xl font-bold text-center mb-2 ">
 					Hi, I'm Alex
 				</h1>
 				
-				<p className="text-xl text-center text-gray-600 mb-8">
+				<p className="text-xl text-center text-slate-400 mb-8">
 					Full Stack Software Engineer & ML Developer
 				</p>
 			</div>
 
 			<section className="max-w-4xl mx-auto px-4 py-8 flex flex-col justify-center">
 				<h2 className="text-2xl font-bold mb-4">About Me</h2>
-				<p className="mb-4">
-					I'll be graduating from the University of Minnesota, Twin Cities in May 2026 with a Bachelor's degree in Computer Science. 
-                    My professional experience spans IT, software engineering, and machine learning, giving me a strong foundation in how technology moves from infrastructure to real-world, user-facing products. 
-                    
-				</p>
-                    I care deeply about building software that is not only technically strong, but also intuitive, reliable, and genuinely useful to the people who depend on it. 
-                    I enjoy taking ideas from concept to production — designing systems, building interfaces, and deploying applications that people can actually use. 
-                    I'm currently seeking software engineering opportunities where I can contribute to impactful products while continuing to grow as a full-stack engineer.
-                <p>
+                <p className="mb-4 text-slate-400">
+                    I’ll be graduating from the University of Minnesota, Twin Cities in May 2026 with a Bachelor’s degree in Computer Science.
+                    My professional experience spans IT, software engineering, and machine learning, giving me a strong foundation in how technology moves from infrastructure to real-world, user-facing products.
+                </p>
 
+                <p className="mb-4 text-slate-400">
+                    I care deeply about building software that is not only technically strong, but also intuitive, reliable, and genuinely useful to the people who depend on it.
+                    I enjoy taking ideas from concept to production — designing systems, building interfaces, and deploying applications that people can actually use.
+                </p>
+
+                <p className="font-bold text-slate-400 text-lg">
+                    I’m currently seeking software engineering opportunities where I can contribute to impactful products while continuing to grow as a full-stack engineer.
                 </p>
 			</section>
 
+            
+            <div className="p-8">
+                <h2 className="text-2xl font-bold mb-2 text-center">
+                    Technical Skills
+                </h2>
+                <p className="text-center text-slate-400 mb-8">
+                    Tools and technologies I use to build full-stack and machine-learning-powered products.
+                </p>
 
-            <div className="flex flex-row justify-center gap-5">
-                <div className="h-30 w-100  border border-emerald-500/30 bg-emerald-500/5 rounded-2xl p-3 shadow-lg shadow-emerald-500/10">
-                    <div>
-                        <h1>Frontend</h1>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+                    {/* Frontend */}
+                    <div className="rounded-2xl p-5 border border-blue-500/40  backdrop-blur shadow-lg hover:shadow-blue-500/20 transition">
+                        <h3 className="text-lg font-semibold mb-1">Frontend</h3>
+                        <p className="text-xs text-slate-400 mb-5">
+                            Designing and building responsive, production UIs
+                        </p>
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {["React.js","Next.js","Vue.js","Tailwind","HTML","CSS"].map(t => (
+                                <span key={t} className="px-3 py-1 rounded-full text-slate-300 border border-slate-400 text-xs ">
+                                    {t}
+                                </span>
+                            ))}
+                        </div>
                     </div>
 
-                    <div>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">React.js</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Next.js</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Vue.js</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Tailwind</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">HTML</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">CSS</span>
-                        
-                        
+                    {/* Backend */}
+                    <div className="rounded-2xl p-5 border border-emerald-500/30  backdrop-blur shadow-lg hover:shadow-emerald-500/20 transition">
+                        <h3 className="text-lg font-semibold mb-1">Backend</h3>
+                        <p className="text-xs text-slate-400 mb-5">
+                            Building secure, scalable backend services
+                        </p>                        
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {["Node","Express","Django","REST APIs","Auth0","Firebase Auth"].map(t => (
+                                <span key={t} className="px-3 py-1 rounded-full text-slate-300 border border-slate-400 text-xs">
+                                    {t}
+                                </span>
+                            ))}
+                        </div>
                     </div>
-                    
+
+                    {/* Databases */}
+                    <div className="rounded-2xl p-5 border border-purple-500/30 backdrop-blur shadow-lg hover:shadow-purple-500/20 transition">
+                        <h3 className="text-lg font-semibold mb-1">Databases</h3>
+                        <p className="text-xs text-slate-400 mb-5">
+                            Modeling and managing application data
+                        </p>  
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {["PostgreSQL","Supabase","Firestore"].map(t => (
+                                <span key={t} className="px-3 py-1 rounded-full text-slate-300 border border-slate-400 text-xs">
+                                    {t}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
-                <div className="h-30 w-100  border border-emerald-500/30 bg-emerald-500/5 rounded-2xl p-3 shadow-lg shadow-emerald-500/10">
-                    <div>
-                        <h1>Backend</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-5">
+                    {/* Machine Learning */}
+                    <div className="rounded-2xl p-5 border border-pink-500/30 backdrop-blur shadow-lg hover:shadow-pink-500/20 transition">
+                        <h3 className="text-lg font-semibold mb-1">Machine Learning</h3>
+                        <p className="text-xs text-slate-400 mb-5">
+                            Training, evaluating, and integrating predictive models
+                        </p>                          
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {["PyTorch","Scikit-Learn","LightGBM","NumPy","Pandas"].map(t => (
+                                <span key={t} className=" px-3 py-1 rounded-full text-slate-300 border border-slate-400 text-xs">
+                                    {t}
+                                </span>
+                            ))}
+                        </div>
                     </div>
 
-                    <div>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Node</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Express</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Django</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">REST APIs</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Auth0 | Firebase Auth </span>
+                    {/* DevOps */}
+                    <div className="rounded-2xl p-5 border border-orange-500/30 backdrop-blur shadow-lg hover:shadow-orange-500/20 transition">
+                        <h3 className="text-lg font-semibold mb-1">DevOps & Tools</h3>
+                        <p className="text-xs text-slate-400 mb-5">
+                            Shipping and maintaining live systems
+                        </p>   
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {["AWS","Vercel","Render","Git","CI/CD"].map(t => (
+                                <span key={t} className="px-3 py-1 rounded-full text-slate-300 border border-slate-400 text-xs">
+                                    {t}
+                                </span>
+                            ))}
+                        </div>
                     </div>
-                    
                 </div>
 
-
-                <div className="h-30 w-100  border border-emerald-500/30 bg-emerald-500/5 rounded-2xl p-3 shadow-lg shadow-emerald-500/10">
-                    <div>
-                        <h1>Databases</h1>
-                    </div>
-
-                    <div>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">PostgreSQL</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Supabase</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Firestore</span>
-                    </div>
-                    
-                </div>
             </div>
 
 
-            <div className="flex flex-row justify-center gap-5 p-5">
-                <div className="h-30 w-100  border border-emerald-500/30 bg-emerald-500/5 rounded-2xl p-3 shadow-lg shadow-emerald-500/10">
-                    <div>
-                        <h1>Machine Learning</h1>
-                    </div>
-
-                    <div>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">PyTorch</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Scikit-Learn</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">LightGBM</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">NumPy</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Pandas</span>
-                    </div>
-                    
-                </div>
-
-
-                <div className="h-30 w-100  border border-emerald-500/30 bg-emerald-500/5 rounded-2xl p-3 shadow-lg shadow-emerald-500/10">
-                    <div>
-                        <h1>DevOps and Tools</h1>
-                    </div>
-
-                    <div>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">AWS</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Vercel</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Render</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">Git</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs border border-zinc-700">CI/CD</span>
-                    </div>
-                    
-                </div>
-            </div>
 
 		</div>
 	)

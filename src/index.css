@@ -1,6 +1,13 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body{
     background-color: #171B21;
-    color: white;
+    color: #F1F5F9;
+}
+
+:root {
+  font-family: "Space Grotesk", system-ui, sans-serif;
 }

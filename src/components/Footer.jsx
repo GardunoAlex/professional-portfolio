@@ -24,32 +24,32 @@ export default function Footer() {
                         <p className="text-white font-medium">
                             Alexander Garduno Garcia
                         </p>
-                        <p className="text-sm text-zinc-400">
+                        <p className="text-sm text-slate-300">
                             Full-Stack Software Engineer · Machine Learning
                         </p>
                     </div>
 
                     {/* Center */}
                     <nav className="flex justify-center gap-6 text-sm">
-                        <Link to="/" className="hover:text-white transition">Home</Link>
-                        <Link to="/experience" className="hover:text-white transition">Experience</Link>
-                        <Link to="/projects" className="hover:text-white transition">Projects</Link>
-                        <Link to="/contact" className="hover:text-white transition">Contact</Link>
+                        <Link to="/" className="hover:text-white transition text-slate-300">Home</Link>
+                        <Link to="/experience" className="hover:text-white transition text-slate-300">Experience</Link>
+                        <Link to="/projects" className="hover:text-white transition text-slate-300">Projects</Link>
+                        <Link to="/contact" className="hover:text-white transition text-slate-300">Contact</Link>
                     </nav>
 
                     {/* Right */}
                     <div className="flex justify-end gap-6 text-sm">
                         <a
                             href="https://github.com/GardunoAlex"
-                            className="hover:text-white transition"
+                            className="hover:text-white transition text-slate-300"
                             target="_blank"
                             rel="noreferrer"
                         >
                             GitHub
                         </a>
                         <a
-                            href="www.linkedin.com/in/alexandergarduno"
-                            className="hover:text-white transition"
+                            href="https://www.linkedin.com/in/alexandergarduno/"
+                            className="hover:text-white transition text-slate-300"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -60,7 +60,7 @@ export default function Footer() {
                 </div>
 
 				{/* Bottom row */}
-				<div className="pt-4 text-center text-xs text-zinc-500">
+				<div className="pt-4 text-center text-xs text-slate-300">
 					© 2026 Alex Garduno Garcia · Built with React, Tailwind & Vite
 				</div>
 
