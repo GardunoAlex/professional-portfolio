@@ -177,12 +177,14 @@ export default function Home() {
 				<p className="text-slate-400 mb-6">
 					I’m actively looking for software engineering roles — internships or full-time.
 				</p>
-				<a
-					href="mailto:gardu022@umn.edu?subject=Opportunity&body=Hi Alex,%0D%0A%0D%0AI saw your portfolio and would love to connect."
-					className="inline-block px-8 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium"
-				>
-					Get in touch
-				</a>
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=gardu022@umn.edu&su=Opportunity&body=Hi%20Alex,%0D%0A%0D%0AI%20saw%20your%20portfolio%20and%20would%20love%20to%20connect."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium"
+                >
+                    Get in touch
+                </a>
 			</section>
 
 		</div>
