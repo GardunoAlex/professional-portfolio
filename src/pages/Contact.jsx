@@ -59,9 +59,16 @@ export default function Contact(){
 
                         </div>
 
-                        <p className="font-mono text-lg group-hover:text-blue-200 transition text-left">
-                            github.com/GardunoAlex
-                        </p>
+                        <div className='flex text-left'>
+                            <a 
+                            href="https://github.com/GardunoAlex"
+                            target="_blank"
+	                        rel="noopener noreferrer"
+                            className="font-mono text-lg hover:text-blue-200 transition text-left "
+                            >
+                                Github
+                            </a>
+                        </div>
                     </div>
 
 
@@ -87,9 +94,16 @@ export default function Contact(){
 
                         </div>
 
-                        <p className="font-mono text-lg group-hover:text-blue-200 transition text-left">
-                            linkedin.com/in/alexandergarduno
-                        </p>
+                        <div className='flex text-left'>
+                            <a 
+                            href="https://www.linkedin.com/in/alexandergarduno/"
+                            target="_blank"
+	                        rel="noopener noreferrer"
+                            className="font-mono text-lg hover:text-blue-200 transition text-left"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
                     </div>
 
                     {/* DevOps */}
@@ -116,38 +130,6 @@ export default function Contact(){
                         </p>
                     </div>
                 </div>      
-            </div>
-
-
-            <div className='flex justify-center'>
-                <div className="grid grid-cols-1 w-[87%] pb-5">
-                    <div className="rounded-2xl p-5 border border-blue-500/30 backdrop-blur shadow-lg hover:shadow-blue-500/20 transition">
-                        <div className="items-center justify-center gap-4 mb-4">
-
-                            {/* Text */}
-                            <div>
-                                <h3 className="font-bold text-2xl m-3">Download My Resume</h3>
-                                <p className="text-xs text-zinc-400">
-                                    Get a complete overview of my experience, skills, and projects in a nicely formatted PDF.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div className=' flex justify-center'>
-                            <div className="flex items-center gap-4 mb-4 border p-5 rounded-full bg-blue-500/10 border border-blue-500/30 hover:bg-blue-500/30">
-                                <div>
-                                    <Download className='text-blue-400'/>
-                                </div>
-                                <div>
-                                    <a href="/alex_resume.pdf" download className='text-blue-400'>Download</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
             </div>
 
 

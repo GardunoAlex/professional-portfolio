@@ -66,12 +66,12 @@ export default function Home() {
 
 				<p className="text-slate-400 mb-4">
 					I’m a Computer Science senior at the University of Minnesota (May 2026) with experience
-					across full-stack engineering, cloud deployment, and machine learning.
+					across full-stack engineering, cloud deployment, and machine learning
 				</p>
 
 				<p className="text-slate-400">
 					I specialize in taking products from idea → architecture → UI → backend → deployment —
-					building systems that are reliable, scalable, and actually used by real people.
+					building systems that are reliable, scalable, and actually used by real people
 				</p>
 			</section>
 
@@ -172,10 +172,10 @@ export default function Home() {
 			{/* ================= CTA ================= */}
 			<section className="max-w-4xl mx-auto px-6 py-20 text-center">
 				<h2 className="text-3xl font-bold mb-4">
-					Let’s build something meaningful.
+					Let’s build something meaningful
 				</h2>
 				<p className="text-slate-400 mb-6">
-					I’m actively looking for software engineering roles — internships or full-time.
+					I’m actively looking for software engineering roles — internships or full-time
 				</p>
                 <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=gardu022@umn.edu&su=Opportunity&body=Hi%20Alex,%0D%0A%0D%0AI%20saw%20your%20portfolio%20and%20would%20love%20to%20connect."
