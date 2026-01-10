@@ -61,7 +61,7 @@ export default function Footer() {
 
 				{/* Bottom row */}
 				<div className="pt-4 text-center text-xs text-slate-300">
-					© 2026 Alex Garduno Garcia · Built with React, Tailwind & Vite
+					© 2026 Alexander Garduno Garcia — Last updated January 2026
 				</div>
 
 			</div>
