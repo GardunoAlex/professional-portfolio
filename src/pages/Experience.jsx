@@ -13,7 +13,7 @@ export default function Experience() {
 		image: cse,
 		title: "Bachelor of Arts in Computer Science",
 		orgName: "University of Minnesota – Twin Cities",
-		date: "Expected May 2026",
+		date: "Graduated in 2026",
 		location: "Minneapolis, MN",
 		headliner: "Computer Science student focused on software engineering and machine learning",
 		bullets: ["Wallin Scholar and Teaching Assistant for Computational Linear Algebra", "Relevant coursework: Machine Learning, Computer Architecture, Linear Algebra, Algorithms, Web Development", "Built production-grade full-stack and ML-powered applications alongside academic work"],
@@ -35,7 +35,7 @@ export default function Experience() {
 	const localArenaTix = {
 		color: "blue",
 		image: lat,
-		title: "Full Stack Software Engineering Intern",
+		title: "Full Stack Software Engineer",
 		orgName: "Local Arena Tix",
 		date: "Oct 2025 – Present",
 		location: "Remote (CA)",
