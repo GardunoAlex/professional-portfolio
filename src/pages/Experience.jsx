@@ -123,7 +123,7 @@ export default function Experience() {
 		image: rec,
 		title: "Building Manager",
 		orgName: "Recreation and Wellness Center - University of Minnesota Twin Cities",
-		date: "November 2022 – Present",
+		date: "November 2022 – May 2026",
 		location: "Minneapolis, MN",
 		headliner: "Shift lead overseeing large-scale facility operations, staff coordination, and on-site emergency response",
 		bullets: [

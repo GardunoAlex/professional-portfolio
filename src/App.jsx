@@ -6,6 +6,7 @@ import Contact from "./pages/Contact"
 import "./App.css"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
+import Fun from "./pages/Fun"
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/photography" element ={<Fun />} />
       </Routes>
 
       <Footer />
