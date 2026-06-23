@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { Image } from 'lucide-react';
+
 
 export default function Nav() {
   return (
@@ -8,6 +10,7 @@ export default function Nav() {
         <Link to="/experience" className="text-slate-100">Experience</Link>
         <Link to="/projects" className="text-slate-100">Projects</Link>
         <Link to="/contact" className="text-slate-100">Contact</Link>
+        <Link to="/photography" className="text-amber-200"><Image /></Link>
       </div>
     </nav>
   )

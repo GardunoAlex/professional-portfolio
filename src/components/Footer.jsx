@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Image } from 'lucide-react';
+
 
 export default function Footer() {
 	return (
@@ -56,6 +58,12 @@ export default function Footer() {
 							className="hover:text-white transition text-slate-300"
 						>
 							Contact
+						</Link>
+						<Link
+							to="/photography"
+							className="hover:text-white transition text-amber-200"
+						>
+							<Image />
 						</Link>
 					</nav>
 
