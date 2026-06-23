@@ -1,37 +1,52 @@
 import Skill from "./Skill"
 
 export default function Skills() {
-    const frontend = {
-        title: "Frontend",
-        description: "Designing and building responsive, production UIs",
-        skills: ["React.js", "Next.js", "Vue.js", "Tailwind", "HTML", "CSS"],
-    }
-
-    const backend = {
-        title: "Backend",
-        description: "Building secure, scalable backend services",
-        skills: ["Node", "Express", "Django", "REST APIs", "Auth0", "Firebase"],
-    }
-
-    const db = {
-        title: "Databases",
-        description: "Modeling and managing application data",
-        skills: ["PostgreSQL", "Supabase", "Firestore"],        
-    }
-
-    const ml = {
-        title: "Machine Learning",
-        description: "Training, evaluating, and integrating predictive models",
-        skills: ["PyTorch", "Scikit-Learn", "LightGBM", "NumPy", "Pandas"],        
-    }
-
-    const devOps = {
-        title: "DevOps & Tools",
-        description: "Shipping and maintaining live systems",
-        skills: ["AWS", "Vercel", "Render", "Git", "GitLab" ,"Github", "CI/CD"],        
-    }
-
-    const skillList = [frontend, backend, db, ml, devOps];
+    const fullStack = {
+        title: "Full-Stack Development",
+        description: "Building responsive user experiences and scalable backend systems",
+        skills: [
+            "React.js",
+            "Next.js",
+            "Vue.js",
+            "Tailwind",
+            "Node",
+            "Express",
+            "Django",
+            "REST APIs",
+            "Auth0",
+            "Firebase",
+            "Supabase",
+        ],
+    };
+    
+    const dataMl = {
+        title: "Data & Machine Learning",
+        description: "Developing data pipelines and production ML solutions",
+        skills: [
+            "PyTorch",
+            "Scikit-Learn",
+            "LightGBM",
+            "NumPy",
+            "Pandas",
+            "PostgreSQL",
+        ],
+    };
+    
+    const cloudDevOps = {
+        title: "Cloud & DevOps",
+        description: "Deploying, monitoring, and maintaining production applications",
+        skills: [
+            "AWS",
+            "Vercel",
+            "Render",
+            "Git",
+            "GitHub",
+            "GitLab",
+            "CI/CD",
+        ],
+    };
+    
+    const skillList = [fullStack, dataMl, cloudDevOps];
 
     return (
         <section className="max-w-6xl mx-auto px-6 py-16">
